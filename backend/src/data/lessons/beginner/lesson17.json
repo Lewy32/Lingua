@@ -1,0 +1,28 @@
+{
+  "chapterNumber": 17,
+  "title": "Animals",
+  "titleFarsi": "حیوانات",
+  "level": "beginner",
+  "description": "Learn names of common animals",
+  "vocabulary": [
+    { "word": "cat", "farsi": "گربه", "pronunciation": "gorbeh", "partOfSpeech": "noun", "example": "My cat", "exampleFarsi": "گربه من" },
+    { "word": "dog", "farsi": "سگ", "pronunciation": "sag", "partOfSpeech": "noun", "example": "Big dog", "exampleFarsi": "سگ بزرگ" },
+    { "word": "bird", "farsi": "پرنده", "pronunciation": "parandeh", "partOfSpeech": "noun", "example": "Small bird", "exampleFarsi": "پرنده کوچک" },
+    { "word": "fish", "farsi": "ماهی", "pronunciation": "maahi", "partOfSpeech": "noun", "example": "Fresh fish", "exampleFarsi": "ماهی تازه" },
+    { "word": "horse", "farsi": "اسب", "pronunciation": "asb", "partOfSpeech": "noun", "example": "Fast horse", "exampleFarsi": "اسب سریع" },
+    { "word": "cow", "farsi": "گاو", "pronunciation": "gaav", "partOfSpeech": "noun", "example": "Brown cow", "exampleFarsi": "گاو قهوه‌ای" },
+    { "word": "sheep", "farsi": "گوسفند", "pronunciation": "goosefand", "partOfSpeech": "noun", "example": "White sheep", "exampleFarsi": "گوسفند سفید" },
+    { "word": "lion", "farsi": "شیر", "pronunciation": "shir", "partOfSpeech": "noun", "example": "Strong lion", "exampleFarsi": "شیر قوی" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match animals", "options": ["گربه", "cat", "سگ", "dog", "پرنده", "bird"], "correctAnswer": {"گربه": "cat", "سگ": "dog", "پرنده": "bird"} },
+    { "type": "multipleChoice", "question": "What is 'fish' in Farsi?", "options": ["گربه", "ماهی", "سگ", "اسب"], "correctAnswer": "ماهی" },
+    { "type": "multipleChoice", "question": "What does 'شیر' mean?", "options": ["cat", "dog", "lion", "horse"], "correctAnswer": "lion" },
+    { "type": "writing", "question": "Type the Farsi word for 'cat'", "correctAnswer": "گربه" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "اسب", "correctAnswer": "horse" },
+    { "type": "speaking", "question": "Say 'dog' in Farsi", "correctAnswer": "سگ", "pronunciation": "sag" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 17
+}

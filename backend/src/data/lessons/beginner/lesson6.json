@@ -1,0 +1,37 @@
+{
+  "chapterNumber": 6,
+  "title": "Food & Drinks",
+  "titleFarsi": "غذا و نوشیدنی",
+  "level": "beginner",
+  "description": "Learn essential food and drink vocabulary",
+  "culturalContent": {
+    "title": "Persian Cuisine",
+    "content": "Persian cuisine is one of the world's oldest and most sophisticated. Rice (polo) is central to most meals, often flavored with saffron. Hospitality is shown through food - guests are always offered tea and treats.",
+    "facts": [
+      "Saffron is the 'red gold' of Persian cooking",
+      "Tea is served constantly throughout the day",
+      "Offering food to guests is a sign of respect (taarof)"
+    ]
+  },
+  "vocabulary": [
+    { "word": "water", "farsi": "آب", "pronunciation": "aab", "partOfSpeech": "noun", "example": "Cold water", "exampleFarsi": "آب سرد" },
+    { "word": "bread", "farsi": "نان", "pronunciation": "naan", "partOfSpeech": "noun", "example": "Fresh bread", "exampleFarsi": "نان تازه" },
+    { "word": "rice", "farsi": "برنج", "pronunciation": "berenj", "partOfSpeech": "noun", "example": "White rice", "exampleFarsi": "برنج سفید" },
+    { "word": "tea", "farsi": "چای", "pronunciation": "chaai", "partOfSpeech": "noun", "example": "Hot tea", "exampleFarsi": "چای داغ" },
+    { "word": "meat", "farsi": "گوشت", "pronunciation": "goosht", "partOfSpeech": "noun", "example": "Fresh meat", "exampleFarsi": "گوشت تازه" },
+    { "word": "fruit", "farsi": "میوه", "pronunciation": "miveh", "partOfSpeech": "noun", "example": "Fresh fruit", "exampleFarsi": "میوه تازه" },
+    { "word": "milk", "farsi": "شیر", "pronunciation": "shir", "partOfSpeech": "noun", "example": "Cold milk", "exampleFarsi": "شیر سرد" },
+    { "word": "apple", "farsi": "سیب", "pronunciation": "sib", "partOfSpeech": "noun", "example": "Red apple", "exampleFarsi": "سیب قرمز" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the food words", "options": ["آب", "water", "نان", "bread", "چای", "tea"], "correctAnswer": {"آب": "water", "نان": "bread", "چای": "tea"} },
+    { "type": "multipleChoice", "question": "What is 'rice' in Farsi?", "options": ["نان", "برنج", "گوشت", "میوه"], "correctAnswer": "برنج" },
+    { "type": "multipleChoice", "question": "What does 'شیر' mean?", "options": ["tea", "water", "milk", "juice"], "correctAnswer": "milk" },
+    { "type": "writing", "question": "Type the Farsi word for 'tea'", "correctAnswer": "چای" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "سیب", "correctAnswer": "apple" },
+    { "type": "speaking", "question": "Say 'water' in Farsi", "correctAnswer": "آب", "pronunciation": "aab" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 6
+}

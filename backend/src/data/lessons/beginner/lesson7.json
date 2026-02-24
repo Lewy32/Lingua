@@ -1,0 +1,36 @@
+{
+  "chapterNumber": 7,
+  "title": "Persian Alphabet Part 1",
+  "titleFarsi": "الفبای فارسی - بخش اول",
+  "level": "beginner",
+  "description": "Learn the first 8 letters of the Persian alphabet",
+  "culturalContent": {
+    "title": "The Persian Script",
+    "content": "Persian uses a modified Arabic script with four additional letters for sounds unique to Persian. It's written right-to-left and most letters connect to each other, giving Persian calligraphy its beautiful flowing appearance.",
+    "facts": [
+      "Persian has 32 letters (4 more than Arabic)",
+      "Calligraphy is considered a high art form",
+      "Letters change shape based on position in a word"
+    ]
+  },
+  "vocabulary": [
+    { "word": "alef", "farsi": "ا", "pronunciation": "â/a", "partOfSpeech": "letter", "example": "آب (water)", "exampleFarsi": "آب" },
+    { "word": "be", "farsi": "ب", "pronunciation": "b", "partOfSpeech": "letter", "example": "باد (wind)", "exampleFarsi": "باد" },
+    { "word": "pe", "farsi": "پ", "pronunciation": "p", "partOfSpeech": "letter", "example": "پدر (father)", "exampleFarsi": "پدر" },
+    { "word": "te", "farsi": "ت", "pronunciation": "t", "partOfSpeech": "letter", "example": "تو (you)", "exampleFarsi": "تو" },
+    { "word": "se", "farsi": "ث", "pronunciation": "s", "partOfSpeech": "letter", "example": "ثمر (fruit)", "exampleFarsi": "ثمر" },
+    { "word": "jim", "farsi": "ج", "pronunciation": "j", "partOfSpeech": "letter", "example": "جان (soul)", "exampleFarsi": "جان" },
+    { "word": "che", "farsi": "چ", "pronunciation": "ch", "partOfSpeech": "letter", "example": "چای (tea)", "exampleFarsi": "چای" },
+    { "word": "he", "farsi": "ح", "pronunciation": "h", "partOfSpeech": "letter", "example": "حال (condition)", "exampleFarsi": "حال" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the letters to their sounds", "options": ["ب", "b", "پ", "p", "ت", "t"], "correctAnswer": {"ب": "b", "پ": "p", "ت": "t"} },
+    { "type": "multipleChoice", "question": "Which letter makes the 'ch' sound?", "options": ["ج", "چ", "ح", "ث"], "correctAnswer": "چ" },
+    { "type": "multipleChoice", "question": "What sound does 'پ' make?", "options": ["b", "p", "t", "j"], "correctAnswer": "p" },
+    { "type": "writing", "question": "Type the letter that makes the 'b' sound", "correctAnswer": "ب" },
+    { "type": "flashCard", "question": "What sound does this letter make?", "questionFarsi": "ج", "correctAnswer": "j" }
+  ],
+  "xpReward": 120,
+  "requiredLevel": 1,
+  "order": 7
+}

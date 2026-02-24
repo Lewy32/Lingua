@@ -1,0 +1,27 @@
+{
+  "chapterNumber": 16,
+  "title": "Weather",
+  "titleFarsi": "آب و هوا",
+  "level": "beginner",
+  "description": "Learn to talk about weather",
+  "vocabulary": [
+    { "word": "weather", "farsi": "آب و هوا", "pronunciation": "aab-o-havaa", "partOfSpeech": "noun", "example": "Nice weather", "exampleFarsi": "آب و هوای خوب" },
+    { "word": "hot", "farsi": "گرم", "pronunciation": "garm", "partOfSpeech": "adjective", "example": "It's hot", "exampleFarsi": "هوا گرم است" },
+    { "word": "cold", "farsi": "سرد", "pronunciation": "sard", "partOfSpeech": "adjective", "example": "It's cold", "exampleFarsi": "هوا سرد است" },
+    { "word": "rain", "farsi": "باران", "pronunciation": "baaraan", "partOfSpeech": "noun", "example": "It's raining", "exampleFarsi": "باران می‌بارد" },
+    { "word": "snow", "farsi": "برف", "pronunciation": "barf", "partOfSpeech": "noun", "example": "It's snowing", "exampleFarsi": "برف می‌بارد" },
+    { "word": "sun", "farsi": "آفتاب", "pronunciation": "aaftaab", "partOfSpeech": "noun", "example": "The sun is shining", "exampleFarsi": "آفتاب می‌تابد" },
+    { "word": "wind", "farsi": "باد", "pronunciation": "baad", "partOfSpeech": "noun", "example": "Strong wind", "exampleFarsi": "باد قوی" },
+    { "word": "sky", "farsi": "آسمان", "pronunciation": "aasemaan", "partOfSpeech": "noun", "example": "Blue sky", "exampleFarsi": "آسمان آبی" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match weather words", "options": ["گرم", "hot", "سرد", "cold", "باران", "rain"], "correctAnswer": {"گرم": "hot", "سرد": "cold", "باران": "rain"} },
+    { "type": "multipleChoice", "question": "What is 'snow' in Farsi?", "options": ["باران", "برف", "باد", "آفتاب"], "correctAnswer": "برف" },
+    { "type": "multipleChoice", "question": "What does 'آسمان' mean?", "options": ["sun", "rain", "sky", "wind"], "correctAnswer": "sky" },
+    { "type": "writing", "question": "Type the Farsi word for 'cold'", "correctAnswer": "سرد" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "آفتاب", "correctAnswer": "sun" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 16
+}

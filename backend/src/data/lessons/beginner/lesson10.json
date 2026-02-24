@@ -1,0 +1,37 @@
+{
+  "chapterNumber": 10,
+  "title": "Question Words",
+  "titleFarsi": "کلمات پرسشی",
+  "level": "beginner",
+  "description": "Learn how to ask questions in Farsi",
+  "culturalContent": {
+    "title": "Asking Questions in Persian",
+    "content": "Persian questions often use rising intonation at the end. Question words typically come at the beginning of the sentence. Using the polite form (shomaa) when asking questions of strangers or elders is important.",
+    "facts": [
+      "Rising intonation can turn statements into questions",
+      "آیا (aayaa) is an optional question marker",
+      "Polite questioning is highly valued in Persian culture"
+    ]
+  },
+  "vocabulary": [
+    { "word": "what", "farsi": "چه/چی", "pronunciation": "che/chi", "partOfSpeech": "pronoun", "example": "What is this?", "exampleFarsi": "این چیست؟" },
+    { "word": "who", "farsi": "که/کی", "pronunciation": "ke/ki", "partOfSpeech": "pronoun", "example": "Who is he?", "exampleFarsi": "او کیست؟" },
+    { "word": "where", "farsi": "کجا", "pronunciation": "kojaa", "partOfSpeech": "adverb", "example": "Where are you?", "exampleFarsi": "کجایی؟" },
+    { "word": "when", "farsi": "کی/چه وقت", "pronunciation": "key/che vaght", "partOfSpeech": "adverb", "example": "When are you coming?", "exampleFarsi": "کی می‌آیی؟" },
+    { "word": "why", "farsi": "چرا", "pronunciation": "cheraa", "partOfSpeech": "adverb", "example": "Why not?", "exampleFarsi": "چرا که نه؟" },
+    { "word": "how", "farsi": "چطور/چگونه", "pronunciation": "chetor/chegooneh", "partOfSpeech": "adverb", "example": "How are you?", "exampleFarsi": "چطوری؟" },
+    { "word": "how much", "farsi": "چقدر", "pronunciation": "cheghadr", "partOfSpeech": "adverb", "example": "How much is it?", "exampleFarsi": "چقدر است؟" },
+    { "word": "which", "farsi": "کدام", "pronunciation": "kodaam", "partOfSpeech": "pronoun", "example": "Which one?", "exampleFarsi": "کدام یکی؟" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the question words", "options": ["چه", "what", "کجا", "where", "چرا", "why"], "correctAnswer": {"چه": "what", "کجا": "where", "چرا": "why"} },
+    { "type": "multipleChoice", "question": "How do you say 'where' in Farsi?", "options": ["چه", "کی", "کجا", "چرا"], "correctAnswer": "کجا" },
+    { "type": "multipleChoice", "question": "What does 'چقدر' mean?", "options": ["why", "when", "how", "how much"], "correctAnswer": "how much" },
+    { "type": "writing", "question": "Type the Farsi word for 'why'", "correctAnswer": "چرا" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "کدام", "correctAnswer": "which" },
+    { "type": "fillInBlanks", "question": "___ are you? (How)", "questionFarsi": "___ هستی؟", "correctAnswer": "چطور" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 10
+}

@@ -1,0 +1,37 @@
+{
+  "chapterNumber": 9,
+  "title": "Basic Verbs",
+  "titleFarsi": "فعل‌های پایه",
+  "level": "beginner",
+  "description": "Learn essential action verbs in Farsi",
+  "culturalContent": {
+    "title": "Persian Verbs",
+    "content": "Persian verbs come at the end of sentences (SOV structure). The infinitive form ends in 'دن' (dan) or 'تن' (tan). Verbs conjugate based on person and tense, with the stem changing.",
+    "facts": [
+      "Persian has only two verb tenses: past and non-past",
+      "The verb 'to be' is often omitted in present tense",
+      "Compound verbs are very common in Persian"
+    ]
+  },
+  "vocabulary": [
+    { "word": "to go", "farsi": "رفتن", "pronunciation": "raftan", "partOfSpeech": "verb", "example": "I go to school", "exampleFarsi": "من به مدرسه می‌روم" },
+    { "word": "to come", "farsi": "آمدن", "pronunciation": "aamadan", "partOfSpeech": "verb", "example": "Please come", "exampleFarsi": "لطفاً بیا" },
+    { "word": "to eat", "farsi": "خوردن", "pronunciation": "khordan", "partOfSpeech": "verb", "example": "I eat food", "exampleFarsi": "من غذا می‌خورم" },
+    { "word": "to drink", "farsi": "نوشیدن", "pronunciation": "nooshidan", "partOfSpeech": "verb", "example": "I drink water", "exampleFarsi": "من آب می‌نوشم" },
+    { "word": "to see", "farsi": "دیدن", "pronunciation": "didan", "partOfSpeech": "verb", "example": "I see you", "exampleFarsi": "من تو را می‌بینم" },
+    { "word": "to speak", "farsi": "حرف زدن", "pronunciation": "harf zadan", "partOfSpeech": "verb", "example": "I speak Farsi", "exampleFarsi": "من فارسی حرف می‌زنم" },
+    { "word": "to read", "farsi": "خواندن", "pronunciation": "khaandan", "partOfSpeech": "verb", "example": "I read a book", "exampleFarsi": "من کتاب می‌خوانم" },
+    { "word": "to write", "farsi": "نوشتن", "pronunciation": "neveshtan", "partOfSpeech": "verb", "example": "I write a letter", "exampleFarsi": "من نامه می‌نویسم" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the verbs", "options": ["رفتن", "to go", "آمدن", "to come", "خوردن", "to eat"], "correctAnswer": {"رفتن": "to go", "آمدن": "to come", "خوردن": "to eat"} },
+    { "type": "multipleChoice", "question": "How do you say 'to read' in Farsi?", "options": ["نوشتن", "خواندن", "دیدن", "رفتن"], "correctAnswer": "خواندن" },
+    { "type": "multipleChoice", "question": "What does 'نوشیدن' mean?", "options": ["to eat", "to drink", "to see", "to speak"], "correctAnswer": "to drink" },
+    { "type": "writing", "question": "Type the Farsi word for 'to go'", "correctAnswer": "رفتن" },
+    { "type": "flashCard", "question": "What does this verb mean?", "questionFarsi": "دیدن", "correctAnswer": "to see" },
+    { "type": "speaking", "question": "Say 'to come' in Farsi", "correctAnswer": "آمدن", "pronunciation": "aamadan" }
+  ],
+  "xpReward": 120,
+  "requiredLevel": 1,
+  "order": 9
+}

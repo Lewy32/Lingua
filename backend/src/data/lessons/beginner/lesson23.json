@@ -1,0 +1,16 @@
+{
+  "chapterNumber": 23,
+  "title": "Lesson 23",
+  "titleFarsi": "درس 23",
+  "level": "beginner",
+  "description": "Continue your Farsi learning journey",
+  "vocabulary": [
+    { "word": "word23a", "farsi": "کلمه", "pronunciation": "kalame", "partOfSpeech": "noun", "example": "Example", "exampleFarsi": "مثال" }
+  ],
+  "exercises": [
+    { "type": "multipleChoice", "question": "Practice question", "options": ["A", "B", "C", "D"], "correctAnswer": "A" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 23
+}

@@ -1,0 +1,33 @@
+{
+  "chapterNumber": 11,
+  "title": "Body Parts",
+  "titleFarsi": "اعضای بدن",
+  "level": "beginner",
+  "description": "Learn vocabulary for parts of the body",
+  "culturalContent": {
+    "title": "Body Language in Iran",
+    "content": "Iranians use expressive gestures when speaking. Direct eye contact shows respect but can be avoided with opposite genders. Touching someone's head is considered impolite, while a hand on the heart shows sincerity.",
+    "facts": ["Hand on heart means sincerity", "Nodding can mean 'no' in some contexts", "Personal space is smaller than Western cultures"]
+  },
+  "vocabulary": [
+    { "word": "head", "farsi": "سر", "pronunciation": "sar", "partOfSpeech": "noun", "example": "My head hurts", "exampleFarsi": "سرم درد می‌کند" },
+    { "word": "eye", "farsi": "چشم", "pronunciation": "cheshm", "partOfSpeech": "noun", "example": "Beautiful eyes", "exampleFarsi": "چشم‌های زیبا" },
+    { "word": "hand", "farsi": "دست", "pronunciation": "dast", "partOfSpeech": "noun", "example": "Clean hands", "exampleFarsi": "دست‌های تمیز" },
+    { "word": "heart", "farsi": "قلب", "pronunciation": "ghalb", "partOfSpeech": "noun", "example": "Kind heart", "exampleFarsi": "قلب مهربان" },
+    { "word": "ear", "farsi": "گوش", "pronunciation": "goosh", "partOfSpeech": "noun", "example": "My ears", "exampleFarsi": "گوش‌هایم" },
+    { "word": "nose", "farsi": "بینی", "pronunciation": "bini", "partOfSpeech": "noun", "example": "Small nose", "exampleFarsi": "بینی کوچک" },
+    { "word": "mouth", "farsi": "دهان", "pronunciation": "dahaan", "partOfSpeech": "noun", "example": "Open mouth", "exampleFarsi": "دهان باز" },
+    { "word": "foot", "farsi": "پا", "pronunciation": "paa", "partOfSpeech": "noun", "example": "Big foot", "exampleFarsi": "پای بزرگ" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match body parts", "options": ["سر", "head", "دست", "hand", "پا", "foot"], "correctAnswer": {"سر": "head", "دست": "hand", "پا": "foot"} },
+    { "type": "multipleChoice", "question": "What is 'eye' in Farsi?", "options": ["گوش", "بینی", "چشم", "دهان"], "correctAnswer": "چشم" },
+    { "type": "multipleChoice", "question": "What does 'قلب' mean?", "options": ["head", "hand", "foot", "heart"], "correctAnswer": "heart" },
+    { "type": "writing", "question": "Type the Farsi word for 'hand'", "correctAnswer": "دست" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "گوش", "correctAnswer": "ear" },
+    { "type": "speaking", "question": "Say 'head' in Farsi", "correctAnswer": "سر", "pronunciation": "sar" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 11
+}

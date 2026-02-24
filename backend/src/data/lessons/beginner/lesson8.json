@@ -1,0 +1,37 @@
+{
+  "chapterNumber": 8,
+  "title": "Days of the Week",
+  "titleFarsi": "روزهای هفته",
+  "level": "beginner",
+  "description": "Learn the days of the week in Farsi",
+  "culturalContent": {
+    "title": "The Iranian Week",
+    "content": "The Iranian week starts on Saturday (Shanbe) and the weekend is Thursday-Friday. Friday is the holy day and most offices are closed. The Persian calendar has unique month names.",
+    "facts": [
+      "Friday (Jom'e) is the day of communal prayer",
+      "The weekend was traditionally only Friday",
+      "Saturday is 'Shanbe' which other days are named after"
+    ]
+  },
+  "vocabulary": [
+    { "word": "Saturday", "farsi": "شنبه", "pronunciation": "shanbe", "partOfSpeech": "noun", "example": "Today is Saturday", "exampleFarsi": "امروز شنبه است" },
+    { "word": "Sunday", "farsi": "یکشنبه", "pronunciation": "yekshanbe", "partOfSpeech": "noun", "example": "Sunday morning", "exampleFarsi": "صبح یکشنبه" },
+    { "word": "Monday", "farsi": "دوشنبه", "pronunciation": "doshanbe", "partOfSpeech": "noun", "example": "See you Monday", "exampleFarsi": "دوشنبه می‌بینمت" },
+    { "word": "Tuesday", "farsi": "سه‌شنبه", "pronunciation": "seshanbe", "partOfSpeech": "noun", "example": "Tuesday night", "exampleFarsi": "شب سه‌شنبه" },
+    { "word": "Wednesday", "farsi": "چهارشنبه", "pronunciation": "chahaarshanbe", "partOfSpeech": "noun", "example": "Wednesday afternoon", "exampleFarsi": "بعدازظهر چهارشنبه" },
+    { "word": "Thursday", "farsi": "پنجشنبه", "pronunciation": "panjshanbe", "partOfSpeech": "noun", "example": "Thursday evening", "exampleFarsi": "غروب پنجشنبه" },
+    { "word": "Friday", "farsi": "جمعه", "pronunciation": "jom'e", "partOfSpeech": "noun", "example": "Friday prayers", "exampleFarsi": "نماز جمعه" },
+    { "word": "week", "farsi": "هفته", "pronunciation": "hafte", "partOfSpeech": "noun", "example": "This week", "exampleFarsi": "این هفته" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the days", "options": ["شنبه", "Saturday", "یکشنبه", "Sunday", "دوشنبه", "Monday"], "correctAnswer": {"شنبه": "Saturday", "یکشنبه": "Sunday", "دوشنبه": "Monday"} },
+    { "type": "multipleChoice", "question": "What is Friday in Farsi?", "options": ["شنبه", "پنجشنبه", "جمعه", "یکشنبه"], "correctAnswer": "جمعه" },
+    { "type": "multipleChoice", "question": "What day is 'چهارشنبه'?", "options": ["Tuesday", "Wednesday", "Thursday", "Friday"], "correctAnswer": "Wednesday" },
+    { "type": "writing", "question": "Type the Farsi word for 'Saturday'", "correctAnswer": "شنبه" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "هفته", "correctAnswer": "week" },
+    { "type": "fillInBlanks", "question": "Saturday, Sunday, ___ (Monday)", "questionFarsi": "شنبه، یکشنبه، ___", "correctAnswer": "دوشنبه" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 8
+}

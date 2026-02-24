@@ -1,0 +1,28 @@
+{
+  "chapterNumber": 12,
+  "title": "Common Adjectives",
+  "titleFarsi": "صفت‌های رایج",
+  "level": "beginner",
+  "description": "Learn common descriptive words",
+  "vocabulary": [
+    { "word": "big", "farsi": "بزرگ", "pronunciation": "bozorg", "partOfSpeech": "adjective", "example": "Big house", "exampleFarsi": "خانه بزرگ" },
+    { "word": "small", "farsi": "کوچک", "pronunciation": "koochak", "partOfSpeech": "adjective", "example": "Small cat", "exampleFarsi": "گربه کوچک" },
+    { "word": "good", "farsi": "خوب", "pronunciation": "khoob", "partOfSpeech": "adjective", "example": "Good person", "exampleFarsi": "آدم خوب" },
+    { "word": "bad", "farsi": "بد", "pronunciation": "bad", "partOfSpeech": "adjective", "example": "Bad weather", "exampleFarsi": "هوای بد" },
+    { "word": "beautiful", "farsi": "زیبا", "pronunciation": "zibaa", "partOfSpeech": "adjective", "example": "Beautiful flower", "exampleFarsi": "گل زیبا" },
+    { "word": "new", "farsi": "جدید", "pronunciation": "jadid", "partOfSpeech": "adjective", "example": "New car", "exampleFarsi": "ماشین جدید" },
+    { "word": "old", "farsi": "قدیمی", "pronunciation": "ghadimi", "partOfSpeech": "adjective", "example": "Old book", "exampleFarsi": "کتاب قدیمی" },
+    { "word": "hot", "farsi": "داغ", "pronunciation": "daagh", "partOfSpeech": "adjective", "example": "Hot tea", "exampleFarsi": "چای داغ" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the adjectives", "options": ["بزرگ", "big", "کوچک", "small", "خوب", "good"], "correctAnswer": {"بزرگ": "big", "کوچک": "small", "خوب": "good"} },
+    { "type": "multipleChoice", "question": "What is 'beautiful' in Farsi?", "options": ["خوب", "بد", "زیبا", "جدید"], "correctAnswer": "زیبا" },
+    { "type": "multipleChoice", "question": "What does 'قدیمی' mean?", "options": ["new", "old", "big", "small"], "correctAnswer": "old" },
+    { "type": "writing", "question": "Type the Farsi word for 'good'", "correctAnswer": "خوب" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "داغ", "correctAnswer": "hot" },
+    { "type": "fillInBlanks", "question": "A ___ house (big)", "questionFarsi": "خانه ___", "correctAnswer": "بزرگ" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 12
+}

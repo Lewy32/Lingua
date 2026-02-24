@@ -1,0 +1,37 @@
+{
+  "chapterNumber": 5,
+  "title": "Colors",
+  "titleFarsi": "رنگ‌ها",
+  "level": "beginner",
+  "description": "Learn the names of common colors in Farsi",
+  "culturalContent": {
+    "title": "Colors in Persian Culture",
+    "content": "Colors have deep symbolic meaning in Persian culture. Green represents paradise and is associated with Islam. Red symbolizes courage and love. White represents purity, and blue wards off evil (the 'evil eye').",
+    "facts": [
+      "Green is considered sacred and lucky",
+      "Blue tiles protect against the evil eye in architecture",
+      "Haft-sin (Nowruz) items represent specific colors and meanings"
+    ]
+  },
+  "vocabulary": [
+    { "word": "red", "farsi": "قرمز", "pronunciation": "ghermez", "partOfSpeech": "adjective", "example": "A red apple", "exampleFarsi": "یک سیب قرمز" },
+    { "word": "blue", "farsi": "آبی", "pronunciation": "aabi", "partOfSpeech": "adjective", "example": "Blue sky", "exampleFarsi": "آسمان آبی" },
+    { "word": "green", "farsi": "سبز", "pronunciation": "sabz", "partOfSpeech": "adjective", "example": "Green grass", "exampleFarsi": "چمن سبز" },
+    { "word": "yellow", "farsi": "زرد", "pronunciation": "zard", "partOfSpeech": "adjective", "example": "Yellow flower", "exampleFarsi": "گل زرد" },
+    { "word": "white", "farsi": "سفید", "pronunciation": "sefid", "partOfSpeech": "adjective", "example": "White snow", "exampleFarsi": "برف سفید" },
+    { "word": "black", "farsi": "سیاه", "pronunciation": "siyaah", "partOfSpeech": "adjective", "example": "Black cat", "exampleFarsi": "گربه سیاه" },
+    { "word": "orange", "farsi": "نارنجی", "pronunciation": "naaranji", "partOfSpeech": "adjective", "example": "Orange sunset", "exampleFarsi": "غروب نارنجی" },
+    { "word": "purple", "farsi": "بنفش", "pronunciation": "banafsh", "partOfSpeech": "adjective", "example": "Purple flower", "exampleFarsi": "گل بنفش" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the colors", "options": ["قرمز", "red", "آبی", "blue", "سبز", "green"], "correctAnswer": {"قرمز": "red", "آبی": "blue", "سبز": "green"} },
+    { "type": "multipleChoice", "question": "What color is 'زرد'?", "options": ["red", "yellow", "green", "blue"], "correctAnswer": "yellow" },
+    { "type": "multipleChoice", "question": "How do you say 'white' in Farsi?", "options": ["سیاه", "سفید", "سبز", "قرمز"], "correctAnswer": "سفید" },
+    { "type": "writing", "question": "Type the Farsi word for 'black'", "correctAnswer": "سیاه" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "نارنجی", "correctAnswer": "orange" },
+    { "type": "fillInBlanks", "question": "The sky is ___ (blue)", "questionFarsi": "آسمان ___ است", "correctAnswer": "آبی" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 5
+}

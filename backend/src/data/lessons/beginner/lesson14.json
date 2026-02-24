@@ -1,0 +1,30 @@
+{
+  "chapterNumber": 14,
+  "title": "Numbers 11-20",
+  "titleFarsi": "اعداد ۱۱ تا ۲۰",
+  "level": "beginner",
+  "description": "Continue learning numbers",
+  "vocabulary": [
+    { "word": "eleven", "farsi": "یازده", "pronunciation": "yaazdah", "partOfSpeech": "noun", "example": "Eleven o'clock", "exampleFarsi": "ساعت یازده" },
+    { "word": "twelve", "farsi": "دوازده", "pronunciation": "davaazdah", "partOfSpeech": "noun", "example": "Twelve months", "exampleFarsi": "دوازده ماه" },
+    { "word": "thirteen", "farsi": "سیزده", "pronunciation": "sizdah", "partOfSpeech": "noun", "example": "Thirteen days", "exampleFarsi": "سیزده روز" },
+    { "word": "fourteen", "farsi": "چهارده", "pronunciation": "chahaardag", "partOfSpeech": "noun", "example": "Fourteen years", "exampleFarsi": "چهارده سال" },
+    { "word": "fifteen", "farsi": "پانزده", "pronunciation": "paanzdah", "partOfSpeech": "noun", "example": "Fifteen minutes", "exampleFarsi": "پانزده دقیقه" },
+    { "word": "sixteen", "farsi": "شانزده", "pronunciation": "shaanzdah", "partOfSpeech": "noun", "example": "Sixteen hours", "exampleFarsi": "شانزده ساعت" },
+    { "word": "seventeen", "farsi": "هفده", "pronunciation": "hefdah", "partOfSpeech": "noun", "example": "Seventeen books", "exampleFarsi": "هفده کتاب" },
+    { "word": "eighteen", "farsi": "هجده", "pronunciation": "hejdah", "partOfSpeech": "noun", "example": "Eighteen students", "exampleFarsi": "هجده دانش‌آموز" },
+    { "word": "nineteen", "farsi": "نوزده", "pronunciation": "noozdah", "partOfSpeech": "noun", "example": "Nineteen people", "exampleFarsi": "نوزده نفر" },
+    { "word": "twenty", "farsi": "بیست", "pronunciation": "bist", "partOfSpeech": "noun", "example": "Twenty dollars", "exampleFarsi": "بیست دلار" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the numbers", "options": ["یازده", "11", "دوازده", "12", "سیزده", "13"], "correctAnswer": {"یازده": "11", "دوازده": "12", "سیزده": "13"} },
+    { "type": "multipleChoice", "question": "What is 15 in Farsi?", "options": ["چهارده", "پانزده", "شانزده", "هفده"], "correctAnswer": "پانزده" },
+    { "type": "multipleChoice", "question": "What number is 'بیست'?", "options": ["18", "19", "20", "21"], "correctAnswer": "20" },
+    { "type": "writing", "question": "Type the Farsi word for 'twenty'", "correctAnswer": "بیست" },
+    { "type": "flashCard", "question": "What number is this?", "questionFarsi": "هفده", "correctAnswer": "seventeen" },
+    { "type": "fillInBlanks", "question": "10, ___, 12 (eleven)", "questionFarsi": "ده، ___، دوازده", "correctAnswer": "یازده" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 14
+}

@@ -1,0 +1,16 @@
+{
+  "chapterNumber": 22,
+  "title": "Lesson 22",
+  "titleFarsi": "درس 22",
+  "level": "beginner",
+  "description": "Continue your Farsi learning journey",
+  "vocabulary": [
+    { "word": "word22a", "farsi": "کلمه", "pronunciation": "kalame", "partOfSpeech": "noun", "example": "Example", "exampleFarsi": "مثال" }
+  ],
+  "exercises": [
+    { "type": "multipleChoice", "question": "Practice question", "options": ["A", "B", "C", "D"], "correctAnswer": "A" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 22
+}

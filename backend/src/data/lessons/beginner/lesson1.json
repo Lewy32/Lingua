@@ -1,0 +1,122 @@
+{
+  "chapterNumber": 1,
+  "title": "Greetings and Basic Phrases",
+  "titleFarsi": "سلام و عبارات پایه",
+  "level": "beginner",
+  "description": "Learn essential greetings and polite expressions to start conversations in Farsi",
+  "culturalContent": {
+    "title": "Persian Greeting Culture",
+    "content": "Iranians are known for their warm hospitality and elaborate greetings. It's common to ask about each other's health, family, and well-being multiple times in a conversation. This shows genuine care and respect. When meeting someone, handshakes are common among men, while women may nod or smile. Close friends and family often kiss on both cheeks.",
+    "facts": [
+      "Iranians typically ask 'Haal-e shomaa chetore?' (How are you?) several times in one conversation",
+      "It's polite to ask about someone's family members",
+      "Tarof (تعارف) is a complex system of etiquette showing respect and humility"
+    ]
+  },
+  "vocabulary": [
+    {
+      "word": "hello",
+      "farsi": "سلام",
+      "pronunciation": "salaam",
+      "partOfSpeech": "phrase",
+      "example": "Hello, nice to meet you",
+      "exampleFarsi": "سلام، خوشبختم"
+    },
+    {
+      "word": "goodbye",
+      "farsi": "خداحافظ",
+      "pronunciation": "khodaa-haafez",
+      "partOfSpeech": "phrase",
+      "example": "Goodbye, see you tomorrow",
+      "exampleFarsi": "خداحافظ، فردا می‌بینمت"
+    },
+    {
+      "word": "thank you",
+      "farsi": "متشکرم",
+      "pronunciation": "moteshakkeram",
+      "partOfSpeech": "phrase",
+      "example": "Thank you very much",
+      "exampleFarsi": "خیلی متشکرم"
+    },
+    {
+      "word": "please",
+      "farsi": "لطفاً",
+      "pronunciation": "lotfan",
+      "partOfSpeech": "adverb",
+      "example": "Please sit down",
+      "exampleFarsi": "لطفاً بنشینید"
+    },
+    {
+      "word": "yes",
+      "farsi": "بله",
+      "pronunciation": "baleh",
+      "partOfSpeech": "adverb",
+      "example": "Yes, of course",
+      "exampleFarsi": "بله، البته"
+    },
+    {
+      "word": "no",
+      "farsi": "نه",
+      "pronunciation": "na",
+      "partOfSpeech": "adverb",
+      "example": "No, thank you",
+      "exampleFarsi": "نه، متشکرم"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "vocabularyMatch",
+      "question": "Match the Farsi word with its English meaning",
+      "options": ["سلام", "hello", "خداحافظ", "goodbye", "متشکرم", "thank you"],
+      "correctAnswer": {"سلام": "hello", "خداحافظ": "goodbye", "متشکرم": "thank you"}
+    },
+    {
+      "type": "multipleChoice",
+      "question": "How do you say 'hello' in Farsi?",
+      "options": ["سلام", "خداحافظ", "متشکرم", "لطفاً"],
+      "correctAnswer": "سلام"
+    },
+    {
+      "type": "multipleChoice",
+      "question": "What does 'خداحافظ' mean?",
+      "questionFarsi": "خداحافظ چه معنی دارد؟",
+      "options": ["hello", "goodbye", "thank you", "please"],
+      "correctAnswer": "goodbye"
+    },
+    {
+      "type": "speaking",
+      "question": "Say 'hello' in Farsi",
+      "correctAnswer": "سلام",
+      "audioUrl": "salaam.mp3"
+    },
+    {
+      "type": "writing",
+      "question": "Type the Farsi word for 'thank you'",
+      "correctAnswer": "متشکرم"
+    },
+    {
+      "type": "flashCard",
+      "question": "What does this mean?",
+      "questionFarsi": "لطفاً",
+      "correctAnswer": "please"
+    },
+    {
+      "type": "fillInBlanks",
+      "question": "Complete: ___ for your help (thank you)",
+      "questionFarsi": "___ برای کمکتان",
+      "correctAnswer": "متشکرم"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "title": "Basic Sentence Structure",
+      "explanation": "Persian follows Subject-Object-Verb (SOV) word order, unlike English which is SVO",
+      "examples": [
+        "من کتاب می‌خوانم (Man ketaab mikhaanam) - I book read = I read a book"
+      ]
+    }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 1
+}

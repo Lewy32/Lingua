@@ -1,0 +1,28 @@
+{
+  "chapterNumber": 18,
+  "title": "Pronouns",
+  "titleFarsi": "ضمایر",
+  "level": "beginner",
+  "description": "Learn personal pronouns",
+  "vocabulary": [
+    { "word": "I/me", "farsi": "من", "pronunciation": "man", "partOfSpeech": "pronoun", "example": "I am here", "exampleFarsi": "من اینجا هستم" },
+    { "word": "you (informal)", "farsi": "تو", "pronunciation": "to", "partOfSpeech": "pronoun", "example": "You are my friend", "exampleFarsi": "تو دوست من هستی" },
+    { "word": "you (formal)", "farsi": "شما", "pronunciation": "shomaa", "partOfSpeech": "pronoun", "example": "How are you?", "exampleFarsi": "شما چطورید؟" },
+    { "word": "he/she/it", "farsi": "او", "pronunciation": "oo", "partOfSpeech": "pronoun", "example": "He is tall", "exampleFarsi": "او قد بلند است" },
+    { "word": "we", "farsi": "ما", "pronunciation": "maa", "partOfSpeech": "pronoun", "example": "We are students", "exampleFarsi": "ما دانشجو هستیم" },
+    { "word": "they", "farsi": "آن‌ها", "pronunciation": "aanhaa", "partOfSpeech": "pronoun", "example": "They are coming", "exampleFarsi": "آن‌ها می‌آیند" },
+    { "word": "this", "farsi": "این", "pronunciation": "in", "partOfSpeech": "pronoun", "example": "This is good", "exampleFarsi": "این خوب است" },
+    { "word": "that", "farsi": "آن", "pronunciation": "aan", "partOfSpeech": "pronoun", "example": "That is mine", "exampleFarsi": "آن مال من است" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match pronouns", "options": ["من", "I", "تو", "you", "ما", "we"], "correctAnswer": {"من": "I", "تو": "you", "ما": "we"} },
+    { "type": "multipleChoice", "question": "What is the formal 'you' in Farsi?", "options": ["من", "تو", "شما", "او"], "correctAnswer": "شما" },
+    { "type": "multipleChoice", "question": "What does 'آن‌ها' mean?", "options": ["we", "they", "you", "he"], "correctAnswer": "they" },
+    { "type": "writing", "question": "Type the Farsi word for 'I'", "correctAnswer": "من" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "او", "correctAnswer": "he/she/it" },
+    { "type": "fillInBlanks", "question": "___ am a student (I)", "questionFarsi": "___ دانشجو هستم", "correctAnswer": "من" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 18
+}

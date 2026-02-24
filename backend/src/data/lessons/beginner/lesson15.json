@@ -1,0 +1,28 @@
+{
+  "chapterNumber": 15,
+  "title": "Time and Hours",
+  "titleFarsi": "زمان و ساعت",
+  "level": "beginner",
+  "description": "Learn to tell time in Farsi",
+  "vocabulary": [
+    { "word": "hour/time", "farsi": "ساعت", "pronunciation": "saa'at", "partOfSpeech": "noun", "example": "What time is it?", "exampleFarsi": "ساعت چند است؟" },
+    { "word": "minute", "farsi": "دقیقه", "pronunciation": "daghighe", "partOfSpeech": "noun", "example": "Five minutes", "exampleFarsi": "پنج دقیقه" },
+    { "word": "morning", "farsi": "صبح", "pronunciation": "sobh", "partOfSpeech": "noun", "example": "Good morning", "exampleFarsi": "صبح بخیر" },
+    { "word": "afternoon", "farsi": "بعدازظهر", "pronunciation": "ba'd az zohr", "partOfSpeech": "noun", "example": "In the afternoon", "exampleFarsi": "بعدازظهر" },
+    { "word": "evening/night", "farsi": "شب", "pronunciation": "shab", "partOfSpeech": "noun", "example": "Good night", "exampleFarsi": "شب بخیر" },
+    { "word": "today", "farsi": "امروز", "pronunciation": "emrooz", "partOfSpeech": "noun", "example": "Today is Friday", "exampleFarsi": "امروز جمعه است" },
+    { "word": "tomorrow", "farsi": "فردا", "pronunciation": "fardaa", "partOfSpeech": "noun", "example": "See you tomorrow", "exampleFarsi": "فردا می‌بینمت" },
+    { "word": "yesterday", "farsi": "دیروز", "pronunciation": "dirooz", "partOfSpeech": "noun", "example": "Yesterday I worked", "exampleFarsi": "دیروز کار کردم" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match time words", "options": ["صبح", "morning", "شب", "night", "امروز", "today"], "correctAnswer": {"صبح": "morning", "شب": "night", "امروز": "today"} },
+    { "type": "multipleChoice", "question": "How do you say 'tomorrow' in Farsi?", "options": ["دیروز", "امروز", "فردا", "صبح"], "correctAnswer": "فردا" },
+    { "type": "multipleChoice", "question": "What does 'دقیقه' mean?", "options": ["hour", "minute", "second", "day"], "correctAnswer": "minute" },
+    { "type": "writing", "question": "Type the Farsi word for 'morning'", "correctAnswer": "صبح" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "شب", "correctAnswer": "night" },
+    { "type": "speaking", "question": "Say 'today' in Farsi", "correctAnswer": "امروز", "pronunciation": "emrooz" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 15
+}

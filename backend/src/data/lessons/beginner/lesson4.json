@@ -1,0 +1,37 @@
+{
+  "chapterNumber": 4,
+  "title": "Family Members",
+  "titleFarsi": "اعضای خانواده",
+  "level": "beginner",
+  "description": "Learn words for family members and relationships",
+  "culturalContent": {
+    "title": "Family in Iranian Culture",
+    "content": "Family is the cornerstone of Iranian society. Extended families often live together or nearby, and respect for elders is paramount. Children typically live with parents until marriage, and grandparents are highly revered.",
+    "facts": [
+      "It's common for multiple generations to live together",
+      "Using formal pronouns with elders shows respect",
+      "Family gatherings are central to Persian celebrations"
+    ]
+  },
+  "vocabulary": [
+    { "word": "mother", "farsi": "مادر", "pronunciation": "maadar", "partOfSpeech": "noun", "example": "My mother is kind", "exampleFarsi": "مادرم مهربان است" },
+    { "word": "father", "farsi": "پدر", "pronunciation": "pedar", "partOfSpeech": "noun", "example": "My father works", "exampleFarsi": "پدرم کار می‌کند" },
+    { "word": "brother", "farsi": "برادر", "pronunciation": "baraadar", "partOfSpeech": "noun", "example": "My brother is tall", "exampleFarsi": "برادرم قد بلند است" },
+    { "word": "sister", "farsi": "خواهر", "pronunciation": "khaahar", "partOfSpeech": "noun", "example": "My sister studies", "exampleFarsi": "خواهرم درس می‌خواند" },
+    { "word": "grandmother", "farsi": "مادربزرگ", "pronunciation": "maadar-bozorg", "partOfSpeech": "noun", "example": "My grandmother cooks", "exampleFarsi": "مادربزرگم آشپزی می‌کند" },
+    { "word": "grandfather", "farsi": "پدربزرگ", "pronunciation": "pedar-bozorg", "partOfSpeech": "noun", "example": "My grandfather reads", "exampleFarsi": "پدربزرگم کتاب می‌خواند" },
+    { "word": "child", "farsi": "بچه", "pronunciation": "bachche", "partOfSpeech": "noun", "example": "The child plays", "exampleFarsi": "بچه بازی می‌کند" },
+    { "word": "family", "farsi": "خانواده", "pronunciation": "khaanevaadeh", "partOfSpeech": "noun", "example": "My family is big", "exampleFarsi": "خانواده‌ام بزرگ است" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the family members", "options": ["مادر", "mother", "پدر", "father", "برادر", "brother"], "correctAnswer": {"مادر": "mother", "پدر": "father", "برادر": "brother"} },
+    { "type": "multipleChoice", "question": "How do you say 'sister' in Farsi?", "options": ["مادر", "خواهر", "برادر", "بچه"], "correctAnswer": "خواهر" },
+    { "type": "multipleChoice", "question": "What does 'پدربزرگ' mean?", "options": ["father", "brother", "grandfather", "uncle"], "correctAnswer": "grandfather" },
+    { "type": "writing", "question": "Type the Farsi word for 'mother'", "correctAnswer": "مادر" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "خانواده", "correctAnswer": "family" },
+    { "type": "speaking", "question": "Say 'brother' in Farsi", "correctAnswer": "برادر", "pronunciation": "baraadar" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 4
+}

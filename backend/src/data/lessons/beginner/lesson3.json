@@ -1,0 +1,39 @@
+{
+  "chapterNumber": 3,
+  "title": "Numbers 1-10",
+  "titleFarsi": "اعداد ۱ تا ۱۰",
+  "level": "beginner",
+  "description": "Learn to count from 1 to 10 in Farsi",
+  "culturalContent": {
+    "title": "Numbers in Persian Culture",
+    "content": "Persian numbers have their own unique script, though Arabic numerals are also used. Numbers play an important role in Persian poetry and mysticism, with certain numbers like 7 and 40 having special significance.",
+    "facts": [
+      "The number 7 (haft) is considered lucky in Persian culture",
+      "40 (chehel) appears frequently in Iranian traditions",
+      "Persian chess invented the concept of checkmate (shah mat)"
+    ]
+  },
+  "vocabulary": [
+    { "word": "one", "farsi": "یک", "pronunciation": "yek", "partOfSpeech": "noun", "example": "One book", "exampleFarsi": "یک کتاب" },
+    { "word": "two", "farsi": "دو", "pronunciation": "do", "partOfSpeech": "noun", "example": "Two cats", "exampleFarsi": "دو گربه" },
+    { "word": "three", "farsi": "سه", "pronunciation": "se", "partOfSpeech": "noun", "example": "Three friends", "exampleFarsi": "سه دوست" },
+    { "word": "four", "farsi": "چهار", "pronunciation": "chahaar", "partOfSpeech": "noun", "example": "Four seasons", "exampleFarsi": "چهار فصل" },
+    { "word": "five", "farsi": "پنج", "pronunciation": "panj", "partOfSpeech": "noun", "example": "Five fingers", "exampleFarsi": "پنج انگشت" },
+    { "word": "six", "farsi": "شش", "pronunciation": "shesh", "partOfSpeech": "noun", "example": "Six days", "exampleFarsi": "شش روز" },
+    { "word": "seven", "farsi": "هفت", "pronunciation": "haft", "partOfSpeech": "noun", "example": "Seven colors", "exampleFarsi": "هفت رنگ" },
+    { "word": "eight", "farsi": "هشت", "pronunciation": "hasht", "partOfSpeech": "noun", "example": "Eight hours", "exampleFarsi": "هشت ساعت" },
+    { "word": "nine", "farsi": "نه", "pronunciation": "noh", "partOfSpeech": "noun", "example": "Nine months", "exampleFarsi": "نه ماه" },
+    { "word": "ten", "farsi": "ده", "pronunciation": "dah", "partOfSpeech": "noun", "example": "Ten years", "exampleFarsi": "ده سال" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the numbers", "options": ["یک", "1", "دو", "2", "سه", "3"], "correctAnswer": {"یک": "1", "دو": "2", "سه": "3"} },
+    { "type": "multipleChoice", "question": "What is 'five' in Farsi?", "options": ["سه", "پنج", "هفت", "ده"], "correctAnswer": "پنج" },
+    { "type": "multipleChoice", "question": "What number is 'هشت'?", "options": ["6", "7", "8", "9"], "correctAnswer": "8" },
+    { "type": "writing", "question": "Type the Farsi word for 'seven'", "correctAnswer": "هفت" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "ده", "correctAnswer": "ten" },
+    { "type": "fillInBlanks", "question": "one, two, ___ (three)", "questionFarsi": "یک، دو، ___", "correctAnswer": "سه" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 3
+}

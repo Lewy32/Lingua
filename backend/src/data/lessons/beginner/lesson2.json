@@ -1,0 +1,148 @@
+{
+  "chapterNumber": 2,
+  "title": "Numbers 1-10",
+  "titleFarsi": "اعداد ۱-۱۰",
+  "level": "beginner",
+  "description": "Learn to count from 1 to 10 in Farsi",
+  "culturalContent": {
+    "title": "Persian Numbers and Numerals",
+    "content": "Persian uses both Eastern Arabic numerals (۱،۲،۳) and Western numerals (1,2,3). The Eastern Arabic numerals are more traditional and commonly used in formal writing and Persian texts. Numbers are read from left to right, just like in English, even though Farsi text is written right-to-left.",
+    "facts": [
+      "Persian numbers have their roots in Sanskrit",
+      "The word for 'zero' (صفر - sefr) is borrowed from Persian in many languages",
+      "In bazaars, merchants often use finger counting systems for bargaining"
+    ]
+  },
+  "vocabulary": [
+    {
+      "word": "one",
+      "farsi": "یک",
+      "pronunciation": "yek",
+      "partOfSpeech": "noun",
+      "example": "One book",
+      "exampleFarsi": "یک کتاب"
+    },
+    {
+      "word": "two",
+      "farsi": "دو",
+      "pronunciation": "do",
+      "partOfSpeech": "noun",
+      "example": "Two pens",
+      "exampleFarsi": "دو قلم"
+    },
+    {
+      "word": "three",
+      "farsi": "سه",
+      "pronunciation": "se",
+      "partOfSpeech": "noun",
+      "example": "Three apples",
+      "exampleFarsi": "سه سیب"
+    },
+    {
+      "word": "four",
+      "farsi": "چهار",
+      "pronunciation": "chahaar",
+      "partOfSpeech": "noun",
+      "example": "Four chairs",
+      "exampleFarsi": "چهار صندلی"
+    },
+    {
+      "word": "five",
+      "farsi": "پنج",
+      "pronunciation": "panj",
+      "partOfSpeech": "noun",
+      "example": "Five students",
+      "exampleFarsi": "پنج دانشجو"
+    },
+    {
+      "word": "six",
+      "farsi": "شش",
+      "pronunciation": "shesh",
+      "partOfSpeech": "noun",
+      "example": "Six flowers",
+      "exampleFarsi": "شش گل"
+    },
+    {
+      "word": "seven",
+      "farsi": "هفت",
+      "pronunciation": "haft",
+      "partOfSpeech": "noun",
+      "example": "Seven days",
+      "exampleFarsi": "هفت روز"
+    },
+    {
+      "word": "eight",
+      "farsi": "هشت",
+      "pronunciation": "hasht",
+      "partOfSpeech": "noun",
+      "example": "Eight glasses",
+      "exampleFarsi": "هشت لیوان"
+    },
+    {
+      "word": "nine",
+      "farsi": "نه",
+      "pronunciation": "noh",
+      "partOfSpeech": "noun",
+      "example": "Nine friends",
+      "exampleFarsi": "نه دوست"
+    },
+    {
+      "word": "ten",
+      "farsi": "ده",
+      "pronunciation": "dah",
+      "partOfSpeech": "noun",
+      "example": "Ten minutes",
+      "exampleFarsi": "ده دقیقه"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "multipleChoice",
+      "question": "What number is this: سه",
+      "options": ["two", "three", "four", "five"],
+      "correctAnswer": "three"
+    },
+    {
+      "type": "vocabularyMatch",
+      "question": "Match the numbers",
+      "options": ["یک", "one", "پنج", "five", "ده", "ten"],
+      "correctAnswer": {"یک": "one", "پنج": "five", "ده": "ten"}
+    },
+    {
+      "type": "multipleChoice",
+      "question": "How do you write 'seven' in Farsi?",
+      "options": ["شش", "هفت", "هشت", "نه"],
+      "correctAnswer": "هفت"
+    },
+    {
+      "type": "speaking",
+      "question": "Say the number 'four' in Farsi",
+      "correctAnswer": "چهار",
+      "audioUrl": "chahaar.mp3"
+    },
+    {
+      "type": "fillInBlanks",
+      "question": "Count: یک، دو، ___, چهار",
+      "correctAnswer": "سه"
+    },
+    {
+      "type": "reading",
+      "question": "Read and translate: من سه برادر دارم",
+      "questionFarsi": "من سه برادر دارم",
+      "correctAnswer": "I have three brothers"
+    }
+  ],
+  "grammarPoints": [
+    {
+      "title": "Using Numbers with Nouns",
+      "explanation": "In Farsi, numbers come before the noun, just like in English. The noun after a number is usually singular.",
+      "examples": [
+        "سه کتاب (se ketaab) - three book (not books)",
+        "پنج سیب (panj sib) - five apple"
+      ]
+    }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 2
+}

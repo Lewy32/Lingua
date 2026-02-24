@@ -1,0 +1,16 @@
+{
+  "chapterNumber": 20,
+  "title": "Lesson 20",
+  "titleFarsi": "درس 20",
+  "level": "beginner",
+  "description": "Continue your Farsi learning journey",
+  "vocabulary": [
+    { "word": "word20a", "farsi": "کلمه", "pronunciation": "kalame", "partOfSpeech": "noun", "example": "Example", "exampleFarsi": "مثال" }
+  ],
+  "exercises": [
+    { "type": "multipleChoice", "question": "Practice question", "options": ["A", "B", "C", "D"], "correctAnswer": "A" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 20
+}

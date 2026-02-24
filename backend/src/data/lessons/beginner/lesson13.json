@@ -1,0 +1,28 @@
+{
+  "chapterNumber": 13,
+  "title": "Places in the City",
+  "titleFarsi": "مکان‌ها در شهر",
+  "level": "beginner",
+  "description": "Learn vocabulary for common places",
+  "vocabulary": [
+    { "word": "house/home", "farsi": "خانه", "pronunciation": "khaaneh", "partOfSpeech": "noun", "example": "My house", "exampleFarsi": "خانه من" },
+    { "word": "school", "farsi": "مدرسه", "pronunciation": "madrese", "partOfSpeech": "noun", "example": "I go to school", "exampleFarsi": "من به مدرسه می‌روم" },
+    { "word": "hospital", "farsi": "بیمارستان", "pronunciation": "bimaarestaan", "partOfSpeech": "noun", "example": "The hospital is near", "exampleFarsi": "بیمارستان نزدیک است" },
+    { "word": "store/shop", "farsi": "مغازه", "pronunciation": "maghaazeh", "partOfSpeech": "noun", "example": "The store is open", "exampleFarsi": "مغازه باز است" },
+    { "word": "restaurant", "farsi": "رستوران", "pronunciation": "restooran", "partOfSpeech": "noun", "example": "Good restaurant", "exampleFarsi": "رستوران خوب" },
+    { "word": "park", "farsi": "پارک", "pronunciation": "paark", "partOfSpeech": "noun", "example": "Big park", "exampleFarsi": "پارک بزرگ" },
+    { "word": "street", "farsi": "خیابان", "pronunciation": "khiyaabaan", "partOfSpeech": "noun", "example": "Long street", "exampleFarsi": "خیابان طولانی" },
+    { "word": "mosque", "farsi": "مسجد", "pronunciation": "masjed", "partOfSpeech": "noun", "example": "Beautiful mosque", "exampleFarsi": "مسجد زیبا" }
+  ],
+  "exercises": [
+    { "type": "vocabularyMatch", "question": "Match the places", "options": ["خانه", "house", "مدرسه", "school", "پارک", "park"], "correctAnswer": {"خانه": "house", "مدرسه": "school", "پارک": "park"} },
+    { "type": "multipleChoice", "question": "What is 'hospital' in Farsi?", "options": ["مدرسه", "بیمارستان", "مغازه", "رستوران"], "correctAnswer": "بیمارستان" },
+    { "type": "multipleChoice", "question": "What does 'خیابان' mean?", "options": ["house", "park", "street", "store"], "correctAnswer": "street" },
+    { "type": "writing", "question": "Type the Farsi word for 'house'", "correctAnswer": "خانه" },
+    { "type": "flashCard", "question": "What does this mean?", "questionFarsi": "مسجد", "correctAnswer": "mosque" },
+    { "type": "speaking", "question": "Say 'restaurant' in Farsi", "correctAnswer": "رستوران", "pronunciation": "restooran" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 13
+}

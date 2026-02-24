@@ -1,0 +1,16 @@
+{
+  "chapterNumber": 26,
+  "title": "Lesson 26",
+  "titleFarsi": "درس 26",
+  "level": "beginner",
+  "description": "Continue your Farsi learning journey",
+  "vocabulary": [
+    { "word": "word26a", "farsi": "کلمه", "pronunciation": "kalame", "partOfSpeech": "noun", "example": "Example", "exampleFarsi": "مثال" }
+  ],
+  "exercises": [
+    { "type": "multipleChoice", "question": "Practice question", "options": ["A", "B", "C", "D"], "correctAnswer": "A" }
+  ],
+  "xpReward": 100,
+  "requiredLevel": 1,
+  "order": 26
+}
