@@ -1,0 +1,377 @@
+// Lingua Database Schema
+// PostgreSQL + Prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============ Users & Auth ============
+
+model User {
+  id              String    @id @default(cuid())
+  email           String    @unique
+  username        String    @unique
+  displayName     String?
+  passwordHash    String?
+  avatarUrl       String?
+  
+  // Auth providers
+  appleId         String?   @unique
+  googleId        String?   @unique
+  
+  // Subscription
+  subscriptionTier SubscriptionTier @default(FREE)
+  subscriptionId   String?
+  subscriptionEnds DateTime?
+  
+  // Profile
+  nativeLanguage  String    @default("en")
+  timezone        String    @default("UTC")
+  
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  lastActiveAt    DateTime  @default(now())
+  
+  // Relations
+  progress        UserProgress[]
+  achievements    UserAchievement[]
+  lessons         LessonProgress[]
+  streaks         Streak[]
+  friendsInitiated Friendship[] @relation("FriendshipInitiator")
+  friendsReceived  Friendship[] @relation("FriendshipReceiver")
+  transactions    Transaction[]
+  
+  @@index([email])
+  @@index([subscriptionTier])
+}
+
+enum SubscriptionTier {
+  FREE
+  PREMIUM
+  FAMILY
+  LIFETIME
+}
+
+// ============ Language Progress ============
+
+model UserProgress {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  languageCode    String   // e.g., "ja", "ko", "fa"
+  
+  // CEFR Level
+  cefrLevel       String   @default("A1")
+  cefrProgress    Float    @default(0) // 0-100 progress to next level
+  
+  // Stats
+  xp              Int      @default(0)
+  wordsLearned    Int      @default(0)
+  lessonsCompleted Int     @default(0)
+  totalMinutes    Int      @default(0)
+  
+  // Skill breakdown (0-100)
+  readingScore    Float    @default(0)
+  writingScore    Float    @default(0)
+  listeningScore  Float    @default(0)
+  speakingScore   Float    @default(0)
+  
+  // Placement test
+  placementTaken  Boolean  @default(false)
+  placementDate   DateTime?
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([userId, languageCode])
+  @@index([userId])
+  @@index([languageCode])
+}
+
+// ============ Lessons & Content ============
+
+model Lesson {
+  id              String   @id @default(cuid())
+  languageCode    String
+  
+  // Organization
+  unitNumber      Int
+  lessonNumber    Int
+  
+  // Content
+  title           String
+  titleNative     String
+  description     String?
+  cefrLevel       String
+  
+  // Metadata
+  estimatedMinutes Int     @default(5)
+  xpReward        Int      @default(10)
+  
+  // Content (JSON)
+  exercises       Json     // Array of exercise objects
+  vocabulary      Json     // Array of vocabulary items
+  grammar         Json?    // Grammar explanations
+  
+  isPublished     Boolean  @default(true)
+  isPremium       Boolean  @default(false)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  // Relations
+  progress        LessonProgress[]
+  
+  @@unique([languageCode, unitNumber, lessonNumber])
+  @@index([languageCode, cefrLevel])
+}
+
+model LessonProgress {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  lessonId        String
+  lesson          Lesson   @relation(fields: [lessonId], references: [id], onDelete: Cascade)
+  
+  // Progress
+  completed       Boolean  @default(false)
+  completedAt     DateTime?
+  score           Float?   // 0-100
+  xpEarned        Int      @default(0)
+  timeSpent       Int      @default(0) // seconds
+  
+  // Mistakes for review
+  mistakes        Json?    // Array of mistake objects
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([userId, lessonId])
+  @@index([userId])
+}
+
+// ============ Vocabulary & SRS ============
+
+model VocabularyItem {
+  id              String   @id @default(cuid())
+  languageCode    String
+  
+  // Content
+  word            String
+  wordNative      String
+  phonetic        String?
+  partOfSpeech    String?  // noun, verb, adjective, etc.
+  
+  translations    Json     // { en: "hello", es: "hola", ... }
+  examples        Json?    // Array of example sentences
+  audio           String?  // URL to audio file
+  image           String?  // URL to image
+  
+  // Categorization
+  cefrLevel       String
+  category        String?  // food, travel, greetings, etc.
+  tags            String[] // slang, formal, casual, etc.
+  
+  isSlang         Boolean  @default(false)
+  
+  createdAt       DateTime @default(now())
+  
+  // Relations
+  srsItems        SRSItem[]
+  
+  @@index([languageCode, cefrLevel])
+  @@index([languageCode, category])
+}
+
+model SRSItem {
+  id              String   @id @default(cuid())
+  userId          String
+  vocabularyId    String
+  vocabulary      VocabularyItem @relation(fields: [vocabularyId], references: [id], onDelete: Cascade)
+  
+  // SRS Algorithm (SM-2 based)
+  easeFactor      Float    @default(2.5)
+  interval        Int      @default(1)     // days
+  repetitions     Int      @default(0)
+  
+  // Scheduling
+  nextReview      DateTime @default(now())
+  lastReview      DateTime?
+  
+  // Stats
+  correctCount    Int      @default(0)
+  incorrectCount  Int      @default(0)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([userId, vocabularyId])
+  @@index([userId, nextReview])
+}
+
+// ============ Gamification ============
+
+model Streak {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  languageCode    String
+  
+  currentStreak   Int      @default(0)
+  longestStreak   Int      @default(0)
+  lastActivityDate DateTime @default(now()) @db.Date
+  
+  // Streak freeze
+  freezesAvailable Int     @default(0)
+  freezeUsedToday  Boolean @default(false)
+  
+  @@unique([userId, languageCode])
+}
+
+model Achievement {
+  id              String   @id @default(cuid())
+  code            String   @unique
+  
+  name            String
+  description     String
+  icon            String
+  
+  // Requirements
+  type            AchievementType
+  requirement     Int      // e.g., 7 for 7-day streak
+  xpReward        Int      @default(50)
+  
+  // Relations
+  users           UserAchievement[]
+}
+
+enum AchievementType {
+  STREAK
+  LESSONS_COMPLETED
+  WORDS_LEARNED
+  XP_EARNED
+  LEVEL_REACHED
+  PERFECT_LESSON
+  SOCIAL
+}
+
+model UserAchievement {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  achievementId   String
+  achievement     Achievement @relation(fields: [achievementId], references: [id], onDelete: Cascade)
+  
+  unlockedAt      DateTime @default(now())
+  progress        Int      @default(0) // For tracking partial progress
+  
+  @@unique([userId, achievementId])
+}
+
+// ============ Social ============
+
+model Friendship {
+  id              String   @id @default(cuid())
+  initiatorId     String
+  initiator       User     @relation("FriendshipInitiator", fields: [initiatorId], references: [id], onDelete: Cascade)
+  receiverId      String
+  receiver        User     @relation("FriendshipReceiver", fields: [receiverId], references: [id], onDelete: Cascade)
+  
+  status          FriendshipStatus @default(PENDING)
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([initiatorId, receiverId])
+}
+
+enum FriendshipStatus {
+  PENDING
+  ACCEPTED
+  BLOCKED
+}
+
+// ============ Payments ============
+
+model Transaction {
+  id              String   @id @default(cuid())
+  userId          String
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  // Payment details
+  provider        PaymentProvider
+  providerId      String   // Transaction ID from provider
+  
+  amount          Float
+  currency        String   @default("USD")
+  
+  productId       String   // e.g., "premium_monthly"
+  productType     ProductType
+  
+  status          TransactionStatus
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@index([userId])
+  @@index([provider, providerId])
+}
+
+enum PaymentProvider {
+  APPLE
+  GOOGLE
+  STRIPE
+}
+
+enum ProductType {
+  SUBSCRIPTION
+  LIFETIME
+  CONSUMABLE
+}
+
+enum TransactionStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+// ============ Recipes (Kitchen Feature) ============
+
+model Recipe {
+  id              String   @id @default(cuid())
+  languageCode    String
+  
+  // Basic info
+  nameEnglish     String
+  nameNative      String
+  namePhonetic    String?
+  description     String?
+  
+  // Metadata
+  difficulty      String   // beginner, intermediate, advanced
+  prepTime        Int      // minutes
+  cookTime        Int      // minutes
+  servings        Int
+  
+  imageUrl        String?
+  
+  // Content (JSON)
+  ingredients     Json     // Array with translations
+  steps           Json     // Array with vocabulary highlights
+  vocabulary      Json     // Key terms
+  culturalContext String?
+  
+  tags            String[]
+  
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@index([languageCode])
+}
