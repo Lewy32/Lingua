@@ -1,219 +1,228 @@
-# 🌍 Lingua
+# Lingua 🌍
 
-> Learn the language. Cook the food. Live the culture.
+**Learn the language. Cook the food. Live the culture.**
 
-A comprehensive multi-language learning app with integrated cultural food experiences. Learn 8+ languages while exploring authentic recipes from each culture.
+A next-generation language learning app that does what Duolingo won't: combines language learning with cultural immersion through authentic recipes and real-world conversations.
 
-![Lingua App](./assets/lingua-preview.png)
+---
 
-## ✨ Features
+## 🎯 The Problem with Duolingo
 
-### 📚 Language Learning
-- **30+ lessons per language** with vocabulary, grammar, and pronunciation
-- **SRS review system** for optimal retention
-- **Speaking practice** with pronunciation feedback
-- **7 exercise types**: multiple choice, matching, fill-blank, listening, speaking, ordering, translation
+| Issue | User Pain |
+|-------|-----------|
+| Hearts system | Punishes mistakes, creates anxiety |
+| No explanations | "Why is this wrong?" frustration |
+| Useless sentences | "The elephant drinks wine" |
+| Feature creep | Too many tabs, lost focus |
+| Gamification > Learning | Earn rewards, forget learning |
+| No cultural context | Language without soul |
 
-### 🍳 Kitchen & Recipes
-- **Authentic recipes** from each language's culture
-- **Native language ingredients** with phonetic pronunciation
-- **Step-by-step cooking mode** with timers and tips
-- **Cooking vocabulary** - learn language through food
-- **Shopping lists** with native translations
-- **Cultural context** - the story behind each dish
+## ✨ How Lingua is Different
 
-### 🎮 Gamification
-- **XP system** with daily goals
-- **Streaks** for consistent practice
-- **Levels** that unlock new content
-- **Leaderboards** to compete with friends
-- **Achievements** for milestones
+### 🚫 No Hearts — Ever
+Mistakes are learning opportunities. You'll never be locked out of practice.
 
-### 👥 Social
-- **Add friends** and see their progress
-- **Leaderboards** (daily, weekly, all-time)
-- **Share recipes** with language learners
+### 📝 Grammar Explanations
+Every wrong answer includes a clear explanation of WHY, not just "try again."
 
-## 🗣️ Supported Languages
+### 🍳 Learn Through Cooking
+Master vocabulary naturally by cooking authentic dishes. Learn "시금치" (spinach) while making bibimbap.
 
-| Language | Native | Cuisine |
-|----------|--------|---------|
-| 🇮🇷 Persian | فارسی | Stews, saffron rice, kebabs |
-| 🇪🇸 Spanish | Español | Tapas, paella, Latin flavors |
-| 🇫🇷 French | Français | Classic techniques, pastries |
-| 🇮🇹 Italian | Italiano | Pasta, pizza, dolci |
-| 🇯🇵 Japanese | 日本語 | Sushi, ramen, izakaya |
-| 🇰🇷 Korean | 한국어 | BBQ, kimchi, banchan |
-| 🇸🇦 Arabic | العربية | Mezze, grilled meats |
-| 🇨🇳 Chinese | 中文 | Regional wok dishes |
+### 💬 Real Conversations
+Practical phrases you'll actually use. AI-powered conversation practice.
 
-*More languages coming soon!*
+### 🎨 Clean, Focused Design
+4 tabs: Learn, Kitchen, Social, Me. That's it.
 
-## 📱 Screenshots
+---
 
-<table>
-  <tr>
-    <td><img src="./assets/screenshots/language-select.png" width="200"/></td>
-    <td><img src="./assets/screenshots/home.png" width="200"/></td>
-    <td><img src="./assets/screenshots/kitchen.png" width="200"/></td>
-    <td><img src="./assets/screenshots/recipe.png" width="200"/></td>
-  </tr>
-  <tr>
-    <td align="center">Language Select</td>
-    <td align="center">Home</td>
-    <td align="center">Kitchen</td>
-    <td align="center">Recipe Detail</td>
-  </tr>
-</table>
+## 📱 Features
 
-## 🛠️ Tech Stack
+### Core Learning
+- **15 exercise types** — tap translation, listening, speaking, conversation
+- **Spaced repetition** — science-backed memory system
+- **Adaptive difficulty** — AI adjusts to your level
+- **Native audio** — real speakers, multiple accents
 
-- **Frontend**: React Native + Expo
-- **Navigation**: React Navigation 6
-- **State**: Context API + AsyncStorage
-- **Backend**: Node.js + Express
-- **Database**: PostgreSQL
-- **Auth**: JWT
-- **Styling**: StyleSheet (dark theme)
+### Kitchen Mode 🍳
+- **60+ cuisines** — from Persian to Japanese to Nigerian
+- **10+ recipes per language** — with full vocabulary integration
+- **Cooking Mode** — step-by-step with timers and vocab quizzes
+- **Cultural context** — understand the story behind each dish
+
+### Gamification (Done Right)
+- **XP & Levels** — without the anxiety
+- **Streaks** — with shields and forgiveness
+- **Leaderboards** — friendly competition
+- **Achievements** — celebrate milestones
+
+### Social
+- **Friends** — learn together
+- **Challenges** — compete on lessons
+- **Share recipes** — food brings people together
+
+---
+
+## 🗣️ Supported Languages (60+)
+
+**Phase 1 (Launch)**
+- 🇪🇸 Spanish
+- 🇫🇷 French  
+- 🇯🇵 Japanese
+- 🇰🇷 Korean
+- 🇩🇪 German
+- 🇮🇹 Italian
+- 🇮🇷 Persian
+- 🇸🇦 Arabic
+
+**Phase 2**
+- All major world languages
+- Regional dialects (Quebec French, Mexican Spanish, etc.)
+- Endangered languages with cultural preservation focus
+
+---
+
+## 🏗️ Tech Stack
+
+### Mobile App
+- **React Native + Expo** — cross-platform iOS/Android
+- **Expo Router** — file-based navigation
+- **React Context** — state management
+- **Async Storage** — offline data
+
+### Backend
+- **Node.js + Express** — REST API
+- **MongoDB** — user data, progress, recipes
+- **Redis** — leaderboards, caching
+- **AWS S3** — audio files, images
+
+### AI
+- **Speech recognition** — pronunciation feedback
+- **GPT-4/Claude** — conversation mode
+- **Custom ML** — adaptive difficulty
+
+---
+
+## 📁 Project Structure
+
+```
+/mobile                 # React Native app
+├── /src
+│   ├── /screens        # All screens
+│   ├── /exercises      # Exercise components
+│   ├── /components     # Reusable UI
+│   ├── /context        # State management
+│   ├── /data           # Languages, recipes
+│   ├── /services       # API clients
+│   └── /utils          # Helpers
+
+/backend                # Node.js server
+├── /routes             # API endpoints
+├── /models             # MongoDB schemas
+├── /services           # Business logic
+└── /migrations         # Database migrations
+```
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 - Node.js 18+
-- pnpm (or npm/yarn)
 - Expo CLI
-- iOS Simulator or Android Emulator (or physical device)
+- MongoDB (local or Atlas)
 
 ### Installation
 
 ```bash
-# Clone the repo
+# Clone
 git clone https://github.com/hussars/lingua.git
 cd lingua
 
-# Install dependencies
+# Mobile app
 cd mobile
-pnpm install
+npm install
+npx expo start
 
-# Start Expo
-pnpm start
+# Backend
+cd ../backend
+npm install
+cp .env.example .env
+# Edit .env with your MongoDB URI
+npm run dev
 ```
 
 ### Running on Device
 
 ```bash
-# iOS
-pnpm ios
+# iOS Simulator
+npx expo run:ios
 
-# Android
-pnpm android
+# Android Emulator
+npx expo run:android
+
+# Physical device
+# Scan QR code from Expo Go app
 ```
-
-### Backend Setup
-
-```bash
-cd backend
-pnpm install
-cp .env.example .env
-# Edit .env with your database credentials
-
-# Run migrations
-pnpm migrate
-
-# Start server
-pnpm dev
-```
-
-## 📁 Project Structure
-
-```
-lingua/
-├── mobile/                  # React Native app
-│   ├── src/
-│   │   ├── components/      # Reusable components
-│   │   ├── screens/         # Screen components
-│   │   ├── navigation/      # Navigation config
-│   │   ├── context/         # React Context providers
-│   │   ├── data/            # Static data (lessons, recipes)
-│   │   │   ├── lessons/     # Lesson content per language
-│   │   │   └── recipes/     # Recipe data per language
-│   │   ├── services/        # API services
-│   │   ├── constants/       # Colors, config
-│   │   └── utils/           # Helpers
-│   └── assets/              # Images, fonts
-│
-├── backend/                 # Node.js API
-│   ├── routes/              # API routes
-│   ├── middleware/          # Auth, validation
-│   ├── models/              # Database models
-│   ├── migrations/          # SQL migrations
-│   └── services/            # Business logic
-│
-└── docs/                    # Documentation
-```
-
-## 🍽️ Recipe Data Structure
-
-Each recipe includes:
-
-```javascript
-{
-  nameNative: 'قورمه سبزی',        // Native script
-  nameEnglish: 'Ghormeh Sabzi',    // English name
-  namePhonetic: 'ghor-MEH sab-ZEE', // Pronunciation guide
-  
-  ingredients: [{
-    nameNative: 'گوشت گوسفند',     // Native ingredient name
-    namePhonetic: 'goosht-e goosfand',
-    quantity: 500,
-    unit: 'g',
-  }],
-  
-  steps: [{
-    instruction: 'Sauté the herbs...',
-    instructionNative: 'سرخ کردن سبزی‌ها...',
-    keyTerms: [
-      { native: 'سرخ کردن', english: 'to sauté' }
-    ],
-  }],
-  
-  vocabulary: [
-    { native: 'خورش', english: 'stew' }
-  ],
-}
-```
-
-## 🔐 Environment Variables
-
-### Mobile (.env)
-
-```env
-API_URL=https://api.lingua.app
-```
-
-### Backend (.env)
-
-```env
-PORT=3000
-DATABASE_URL=postgresql://user:pass@localhost:5432/lingua
-JWT_SECRET=your-secret-key
-```
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE)
-
-## 🤝 Contributing
-
-1. Fork the repo
-2. Create feature branch (`git checkout -b feature/amazing`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing`)
-5. Open a Pull Request
 
 ---
 
-Built with ❤️ by Hussars
+## 📊 Monetization
 
-*Learn the language. Cook the food. Live the culture.*
+### Free Tier (Complete Experience)
+✅ All lessons and exercises  
+✅ Unlimited learning (no hearts!)  
+✅ 3 recipes per language  
+✅ Weekly leaderboards  
+✅ Core features
+
+### Premium ($9.99/month)
+✅ All recipes (10+ per language)  
+✅ Offline mode  
+✅ No ads  
+✅ AI conversation mode  
+✅ Advanced analytics
+
+---
+
+## 🎨 Design Principles
+
+1. **Learning First** — Every feature serves education
+2. **Mistakes Welcome** — No punishment, only growth
+3. **Culture Matters** — Language is inseparable from culture
+4. **Simplicity** — Clean UI, focused experience
+5. **Accessibility** — For everyone, everywhere
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+### Areas We Need Help
+- Native speaker audio recordings
+- Recipe contributions
+- Translations
+- Exercise content
+- UI/UX feedback
+
+---
+
+## 📄 License
+
+MIT License — see [LICENSE](LICENSE)
+
+---
+
+## 🙏 Acknowledgments
+
+- Duolingo — for showing what works (and what doesn't)
+- Native speakers who contributed audio
+- Recipe contributors from around the world
+- Our beta testers
+
+---
+
+*Built with 💜 by Hussars*
+
+**Learn the language. Cook the food. Live the culture.**
