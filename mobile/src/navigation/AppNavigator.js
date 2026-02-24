@@ -7,11 +7,11 @@ import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../context/AuthContext';
 import colors from '../constants/colors';
 
-// Auth Screens
+// Auth & Onboarding Screens
 import AuthScreen from '../screens/AuthScreen';
-
-// Onboarding
+import OnboardingScreen from '../screens/OnboardingScreen';
 import LanguageSelectScreen from '../screens/LanguageSelectScreen';
+import PlacementTestScreen from '../screens/PlacementTestScreen';
 
 // Main Tab Screens
 import HomeScreen from '../screens/HomeScreen';
@@ -32,8 +32,12 @@ import LeaderboardScreen from '../screens/LeaderboardScreen';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
+/**
+ * Main Tab Navigator - 4 clean tabs as per spec
+ */
 const TabNavigator = ({ route }) => {
   const language = route?.params?.language || 'farsi';
+  const cefrLevel = route?.params?.cefrLevel || 'A1';
   
   return (
     <Tab.Navigator
@@ -42,19 +46,16 @@ const TabNavigator = ({ route }) => {
           let iconName;
 
           switch (route.name) {
-            case 'Home':
-              iconName = focused ? 'home' : 'home-outline';
-              break;
             case 'Learn':
               iconName = focused ? 'book' : 'book-outline';
               break;
             case 'Kitchen':
               iconName = focused ? 'restaurant' : 'restaurant-outline';
               break;
-            case 'Culture':
-              iconName = focused ? 'globe' : 'globe-outline';
+            case 'Social':
+              iconName = focused ? 'people' : 'people-outline';
               break;
-            case 'Profile':
+            case 'Me':
               iconName = focused ? 'person' : 'person-outline';
               break;
             default:
@@ -81,14 +82,9 @@ const TabNavigator = ({ route }) => {
       })}
     >
       <Tab.Screen 
-        name="Home" 
-        component={HomeScreen}
-        initialParams={{ language }}
-      />
-      <Tab.Screen 
         name="Learn" 
         component={HomeScreen}
-        initialParams={{ language }}
+        initialParams={{ language, cefrLevel }}
       />
       <Tab.Screen 
         name="Kitchen" 
@@ -96,21 +92,21 @@ const TabNavigator = ({ route }) => {
         initialParams={{ language }}
       />
       <Tab.Screen 
-        name="Culture" 
-        component={CultureScreen}
+        name="Social" 
+        component={FriendsScreen}
         initialParams={{ language }}
       />
       <Tab.Screen 
-        name="Profile" 
+        name="Me" 
         component={ProfileScreen}
-        initialParams={{ language }}
+        initialParams={{ language, cefrLevel }}
       />
     </Tab.Navigator>
   );
 };
 
 const AppNavigator = () => {
-  const { isAuthenticated, isLoading, hasSelectedLanguage } = useAuth();
+  const { isAuthenticated, isLoading, hasCompletedOnboarding } = useAuth();
 
   if (isLoading) {
     return null;
@@ -137,64 +133,110 @@ const AppNavigator = () => {
           animation: 'slide_from_right',
         }}
       >
-        {!isAuthenticated ? (
-          <Stack.Screen name="Auth" component={AuthScreen} />
-        ) : (
+        {/* Zero-friction onboarding - Learn BEFORE signup */}
+        {!hasCompletedOnboarding && (
           <>
-            {/* Language Selection - shown first or accessible from settings */}
+            <Stack.Screen 
+              name="Onboarding" 
+              component={OnboardingScreen}
+              options={{ animation: 'fade' }}
+            />
             <Stack.Screen 
               name="LanguageSelect" 
               component={LanguageSelectScreen}
-              options={{ animation: 'fade' }}
-            />
-            
-            {/* Main Tab Navigator */}
-            <Stack.Screen name="MainTabs" component={TabNavigator} />
-            
-            {/* Lesson Screens */}
-            <Stack.Screen 
-              name="Lesson" 
-              component={LessonScreen}
-              options={{ animation: 'slide_from_bottom' }}
+              options={{ animation: 'slide_from_right' }}
             />
             <Stack.Screen 
-              name="Exercise" 
-              component={ExerciseScreen}
-              options={{
-                animation: 'fade',
+              name="PlacementTest" 
+              component={PlacementTestScreen}
+              options={{ 
+                animation: 'slide_from_right',
                 gestureEnabled: false,
               }}
-            />
-            
-            {/* Recipe/Cooking Screens */}
-            <Stack.Screen 
-              name="RecipeDetail" 
-              component={RecipeDetailScreen}
-              options={{ animation: 'slide_from_right' }}
-            />
-            <Stack.Screen 
-              name="CookingMode" 
-              component={CookingModeScreen}
-              options={{
-                animation: 'slide_from_bottom',
-                gestureEnabled: false,
-                presentation: 'fullScreenModal',
-              }}
-            />
-            
-            {/* Social Screens */}
-            <Stack.Screen 
-              name="Friends" 
-              component={FriendsScreen}
-              options={{ animation: 'slide_from_right' }}
-            />
-            <Stack.Screen 
-              name="Leaderboard" 
-              component={LeaderboardScreen}
-              options={{ animation: 'slide_from_right' }}
             />
           </>
         )}
+
+        {/* Auth - Only after trying the app */}
+        {!isAuthenticated && hasCompletedOnboarding && (
+          <Stack.Screen 
+            name="Auth" 
+            component={AuthScreen}
+            options={{ animation: 'fade' }}
+          />
+        )}
+
+        {/* Main App */}
+        <>
+          {/* Main Tab Navigator */}
+          <Stack.Screen 
+            name="MainTabs" 
+            component={TabNavigator}
+            options={{ animation: 'fade' }}
+          />
+          
+          {/* Lesson Flow Screens */}
+          <Stack.Screen 
+            name="Lesson" 
+            component={LessonScreen}
+            options={{ animation: 'slide_from_bottom' }}
+          />
+          <Stack.Screen 
+            name="Exercise" 
+            component={ExerciseScreen}
+            options={{
+              animation: 'fade',
+              gestureEnabled: false,
+            }}
+          />
+          
+          {/* Language Selection (accessible from settings) */}
+          <Stack.Screen 
+            name="ChangeLanguage" 
+            component={LanguageSelectScreen}
+            options={{ animation: 'slide_from_right' }}
+          />
+          
+          {/* Placement Test (retake) */}
+          <Stack.Screen 
+            name="RetakePlacementTest" 
+            component={PlacementTestScreen}
+            options={{ 
+              animation: 'slide_from_right',
+              gestureEnabled: false,
+            }}
+          />
+          
+          {/* Recipe/Cooking Screens */}
+          <Stack.Screen 
+            name="RecipeDetail" 
+            component={RecipeDetailScreen}
+            options={{ animation: 'slide_from_right' }}
+          />
+          <Stack.Screen 
+            name="CookingMode" 
+            component={CookingModeScreen}
+            options={{
+              animation: 'slide_from_bottom',
+              gestureEnabled: false,
+              presentation: 'fullScreenModal',
+            }}
+          />
+          
+          {/* Culture Screen (deep link from other tabs) */}
+          <Stack.Screen 
+            name="Culture" 
+            component={CultureScreen}
+            options={{ animation: 'slide_from_right' }}
+          />
+          
+          {/* Social Screens */}
+          <Stack.Screen 
+            name="Leaderboard" 
+            component={LeaderboardScreen}
+            options={{ animation: 'slide_from_right' }}
+          />
+        </>
       </Stack.Navigator>
     </NavigationContainer>
   );
